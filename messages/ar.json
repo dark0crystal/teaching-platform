@@ -2,5 +2,9 @@
   "HomePage": {
     "title": "حياكم!",
     "about": "اعرف عنا"
+  },
+  "AboutPage":{
+        "title": "حياكم!",
+        "content":"نحن هنا لمساعدتكم"
   }
 }

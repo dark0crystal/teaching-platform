@@ -2,5 +2,9 @@
   "HomePage": {
     "title": "Hello world!",
     "about": "Go to the about page"
+  },
+  "AboutPage":{
+        "title": "welcome!",
+        "content":"We are here to help you"
   }
 }
