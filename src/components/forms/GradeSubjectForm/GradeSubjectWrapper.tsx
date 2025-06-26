@@ -26,16 +26,16 @@ export default function GradeSubjectFormWrapper() {
 
 
   return (
-    <div className="p-4 border rounded-md max-w-md mx-auto">
+    <div className="p-4 w-screen min-h-screen relative mx-auto flex justify-center items-center">
       <form onSubmit={(e) => e.preventDefault()}>
         {steps[step]}
 
-        <div className="flex justify-between mt-4">
-          {step > 0 && <button type="button" onClick={prevStep}>Back</button>}
+        <div className="flex justify-between fixed bottom-0 left-0 right-0 h-[10vh] p-4 border-t-2 border-gray-400 w-screen">
+          {step > 0 && <button type="button" className="bg-red-200 border rounded-2xl px-4 w-[180px] " onClick={prevStep}>Back</button>}
           {step < steps.length - 1 ? (
-            <button type="button" onClick={nextStep}>Next</button>
+            <button type="button" className="bg-green-200 border rounded-2xl px-4 w-[180px] " onClick={nextStep}>Next</button>
           ) : (
-            <button type="submit" onClick={() => alert(JSON.stringify(formData))}>
+            <button type="submit" className="bg-blue-200 border rounded-2xl px-4 w-[180px] " onClick={() => alert(JSON.stringify(formData))}>
               Submit
             </button>
           )}
