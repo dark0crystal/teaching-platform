@@ -9,7 +9,7 @@ export default function GradeStep1({ grade, setFormData }: Props) {
   return (
     <div>
       <label className="block mb-4 text-lg font-semibold">Select Grade:</label>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 gap-4 md:flex md:flex-row ">
         {grades.map((g) => (
           <button
             key={g}
