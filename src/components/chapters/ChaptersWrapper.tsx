@@ -13,7 +13,7 @@ export default function ChaptersWrapper() {
   return (
     <div className="min-h-screen bg-sky-50 p-10">
       <h1 className="text-3xl font-bold mb-6 text-center text-gray-700">Choose a Chapter</h1>
-      <div className="flex flex-wrap justify-center gap-8">
+      <div className="flex flex-col justify-center gap-8">
         {chapters.map((chapter) => (
           <ChapterCard
             key={chapter.chapterNumber}
