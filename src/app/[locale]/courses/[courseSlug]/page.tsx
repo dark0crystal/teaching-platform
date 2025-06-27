@@ -1,4 +1,4 @@
-import ChapterCard from "@/components/chapters/ChapterCard"
+import ChaptersWrapper from "@/components/chapters/ChaptersWrapper"
 
 interface Props {
   params: {
@@ -13,7 +13,7 @@ export default function CourseDetails({ params }: Props) {
     <div className="text-xl p-6 space-y-4">
       <h1>📘 Course: {decodeURIComponent(courseSlug)}</h1>
       <div>
-        <ChapterCard chapterName="nationalities" chapterNumber={1}/>
+        <ChaptersWrapper/>
       </div>
     </div>
   )
