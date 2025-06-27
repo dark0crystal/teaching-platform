@@ -1,4 +1,5 @@
 "use client"
+import LessonCardsWrapper from "../lessons/LessonCardsWrapper";
 import { ChapterCardInterface } from "./ChapterCardInterface";
 
 export default function ChapterCard({ chapterNumber, chapterName }: ChapterCardInterface) {
@@ -9,6 +10,9 @@ export default function ChapterCard({ chapterNumber, chapterName }: ChapterCardI
           {chapterNumber}
         </div>
         <h2 className="text-xl font-semibold text-gray-800">{chapterName}</h2>
+      </div>
+      <div>
+        <LessonCardsWrapper/>
       </div>
       <button className="mt-4 px-4 py-2 bg-green-400 text-white rounded-full hover:bg-green-500 transition">
         Start
