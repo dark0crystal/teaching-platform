@@ -1,9 +1,7 @@
-interface Chapter {
-  chapterNumber: number
-  chapterName: string
-}
+"use client"
+import { ChapterCardInterface } from "./ChapterCardInterface";
 
-export default function ChapterCard({ chapterNumber, chapterName }: Chapter) {
+export default function ChapterCard({ chapterNumber, chapterName }: ChapterCardInterface) {
   return (
     <div className="bg-white shadow-md rounded-3xl p-6 w-72 h-40 flex flex-col justify-between items-center border-2 border-blue-200 hover:shadow-xl transition-all">
       <div className="flex items-center space-x-4">
