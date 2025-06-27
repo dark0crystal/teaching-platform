@@ -1,3 +1,4 @@
+"use client"
 interface Props {
   grade: string
   setFormData: React.Dispatch<React.SetStateAction<{ grade: string; subject: string }>>
