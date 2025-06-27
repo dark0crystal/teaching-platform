@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from "react"
-import { useRouter } from "next/navigation" 
+import { useRouter } from "@/i18n/navigation"
 import GradeStep1 from "./GradeStep1"
 import SubjectStep2 from "./SubjectStep2"
 
@@ -28,7 +28,7 @@ export default function GradeSubjectFormWrapper() {
     localStorage.setItem("subject", formData.subject)
 
     //  Redirect to course page
-    const targetPath = `/courses/${formData.grade}/${formData.subject.toLowerCase()}`
+    const targetPath = `/courses/${formData.grade}-${formData.subject}`
     router.push(targetPath)
   }
 
