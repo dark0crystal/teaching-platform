@@ -1,25 +1,18 @@
 'use client'
 
 import { useState } from "react"
+import { useRouter } from "next/navigation" 
 import GradeStep1 from "./GradeStep1"
 import SubjectStep2 from "./SubjectStep2"
 
 export default function GradeSubjectFormWrapper() {
+  const router = useRouter() 
+
   const [step, setStep] = useState(0)
   const [formData, setFormData] = useState({
     grade: "",
     subject: ""
   })
-
-//   useEffect(() => {
-//     const storedGrade = localStorage.getItem("grade")
-//     const storedSubject = localStorage.getItem("subject")
-
-//     if (storedGrade && storedSubject) {
-//       setFormData({ grade: storedGrade, subject: storedSubject })
-//       setStep(2) // skip to content if already selected
-//     }
-//   }, [])
 
   const nextStep = () => {
     setStep((prev) => Math.min(prev + 1, 2))
@@ -30,8 +23,13 @@ export default function GradeSubjectFormWrapper() {
   }
 
   const handleSubmit = () => {
+    // Save to localStorage
     localStorage.setItem("grade", formData.grade)
     localStorage.setItem("subject", formData.subject)
+
+    //  Redirect to course page
+    const targetPath = `/courses/${formData.grade}/${formData.subject.toLowerCase()}`
+    router.push(targetPath)
   }
 
   const steps = [
