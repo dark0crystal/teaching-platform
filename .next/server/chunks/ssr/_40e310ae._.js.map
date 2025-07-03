@@ -1,0 +1,8 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 24, "column": 0}, "map": {"version":3,"sources":["file:///Users/almardas/Desktop/teaching-platform/src/components/cube.tsx"],"sourcesContent":["import { Canvas } from \"@react-three/fiber\";\nimport { Suspense } from \"react\";\n\n\nexport default function Cube(){\n    return(\n        <div>\n            <Canvas className=\"min-h-[60rem]  w-full\">\n                <Suspense>\n                    \n                </Suspense>\n            </Canvas>\n\n\n        </div>\n    )\n}"],"names":[],"mappings":";;;;AAAA;AACA;;;;AAGe,SAAS;IACpB,qBACI,8OAAC;kBACG,cAAA,8OAAC,mMAAA,CAAA,SAAM;YAAC,WAAU;sBACd,cAAA,8OAAC,qMAAA,CAAA,WAAQ;;;;;;;;;;;;;;;AAQzB","debugId":null}},
+    {"offset": {"line": 59, "column": 0}, "map": {"version":3,"sources":["file:///Users/almardas/Desktop/teaching-platform/src/app/page.tsx"],"sourcesContent":["import Cube from \"@/components/cube\";\n\nexport default function Home() {\n  return (\n    <div className=\"h-screen w-screen bg-amber-200\">\n      <Cube/>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;AAAA;;;AAEe,SAAS;IACtB,qBACE,8OAAC;QAAI,WAAU;kBACb,cAAA,8OAAC,0HAAA,CAAA,UAAI;;;;;;;;;;AAGX","debugId":null}}]
+}
