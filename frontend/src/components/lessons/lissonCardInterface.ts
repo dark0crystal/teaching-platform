@@ -3,4 +3,5 @@ export interface LessonCardInterface {
     lessonId?:string,
     lessonSlug?:string,
     lessonType?:string
+    courseSlug:string
 }
